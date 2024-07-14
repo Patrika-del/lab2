@@ -23,8 +23,8 @@ jobs:
     steps:
 
       - name:  Printing Custom Message
-        run: echo ${{ inputs.custom_message}}
+        run: echo ${{ inputs.custom_message }}
 
       - name:  Printing run-job boolean value
-        if: github.event.inputs.run_job == true
-        run: echo ${{inputs.run_job}}
+        if: github.event.inputs.run_job == 'true'
+        run: echo ${{ inputs.run_job }}
