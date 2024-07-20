@@ -15,7 +15,7 @@ on:
 
 jobs:
   job1:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: echo "Exploring Workflow Dispatch Trigger"
   job2:
